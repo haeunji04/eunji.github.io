@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관심사</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--[if lt IE 9]> 
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<!-- <style>
+    #interest {
+        /* margin: 30px; */
+        /* padding: 20px; */
+        /* display: inline-block; */
+        /* position: ; */
+    }
+    #interest_{
+        /* display: inline-block; */
+        /* position: fixed; */
+    }
+</style> -->
+<style>
+    .pic_horror {
+        width: 300px;
+        height: 300px;
+        background: url("images/ghost.png") no-repeat;
+        background-size: 100% 100%;
+        display: inline-block;
+    }
+    .pic_pet {
+        width: 300px;
+        height: 300px;
+        background: url("images/pets.png") no-repeat;
+        background-size: 100% 100%;
+        display: inline-block;
+    }
+    .interest {
+        width: 250px;
+        height: 250px;
+        background-color: #000000;
+        opacity: 0;
+        padding: 30px;
+    }
+    .interest p {
+        padding-top: 42%;
+    }
+    .interest a {
+        font-size: 25px;
+        color: white;
+        text-decoration: none;
+    }
+    .pic_horror:hover .interest {
+        opacity: 0.6;
+        text-align: center;
+        color: #ffffff;
+    }
+    .pic_pet:hover .interest {
+        opacity: 0.6;
+        text-align: center;
+        color: #ffffff;
+    }
+    #pic {
+        margin: 0 auto;
+    }
+</style>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header">
+            
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo6.jpg" width="230px" height="100px" alt=""></a>
+                </div>
+                <div class="navi">
+                <ul>
+                    <li>
+                        <a href="자기소개.html" id="btn1"> <span> 자기소개 </span></a>
+                    </li>
+                    <li>
+                        <a href="관심사.html" id="btn2"><span> 관심사 </span></a>
+                        <ul>
+                            <li>
+                                <a href="관심사-공포영화.html"><span> 공포영화 </span></a>
+                            </li>
+                            <li>
+                                <a href="관심사-동물.html"><span> 동물 </span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="개발자로드맵.html" id="btn3"><span> 개발자로드맵 </span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="login">
+                <ul>
+                    <li>
+                        <a href="로그인.html"><span>로그인</span></a>
+                    </li>
+                    <li>
+                        <a href="회원가입.html"><span>회원가입</span></a>
+                    </li>
+                </ul>
+            </div>
+            </nav>
+
+        </header>
+        <br><br>
+        <article style="line-height: 0;">
+            <h1><span>관심사</span></h1>
+            <br>
+            <p></p>
+            <hr>
+            <br>
+            <p>
+            <div id="pic">
+                <div class="pic_horror">
+                    <div class="interest">
+                        <a href="관심사-공포영화.html"><p>공포영화</p></a>
+                    </div>
+                </div>
+                <div class="pic_pet">
+                    <div class="interest">
+                        <a href="관심사-동물.html"><p>동물</p></a>
+                    </div>
+                </div>
+            </div>
+            </p>
+        </article>
+      
+        <footer>
+            <div class="source">
+                <p>공포영화 아이콘 : Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+                <p>동물 아이콘 : Icons made by <a href="https://www.flaticon.com/authors/photo3idea-studio" title="photo3idea_studio">photo3idea_studio</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+             <div id="copy">
+                <p style="font-size: 13px;">Copyright 하은지. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

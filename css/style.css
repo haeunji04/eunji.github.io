@@ -1,0 +1,136 @@
+@font-face { 
+    font-family: 'Cafe24Simplehae'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Simplehae.woff') 
+        format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
+    }
+
+#wrap {
+    /* position: absolute; */
+    /* float: left; */
+    text-align: left;
+    width : 1190px;
+    /* display: inline-block; */
+    /* padding: 20px 10px; */
+    font-family: 'Noto Sans KR', sans-serif;
+    /* font-family: 'Cafe24Simplehae';  */
+    margin: 0 auto;
+}
+
+.header {
+    position: relative;
+    text-align: left;
+    /* height: 100px; */
+    /* border: 1px solid black; */
+}
+.header div {
+    display: inline-block;
+    text-align: left;
+}
+
+
+.navi{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+    position:relative;
+    z-index:2
+}
+
+.navi ul {
+    /* background: rgb(170, 255, 0); */
+    height: 100px;
+    list-style: none;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+.navi li {
+    float: left;
+    padding: 0px;
+}
+
+.navi li a {
+    background: rgb(255, 255, 255);
+    color: rgb(41, 41, 41);
+    display: inline-block;
+    line-height: 100px;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navi li a:hover {
+    background: rgb(195, 221, 231);
+    color: white;
+    text-decoration: none;
+    /* font-weight: bold; */
+}
+/* .navi li:hover a{
+    background: rgb(200, 200, 200);
+} */
+
+.navi li ul {
+    background: rgba(155, 155, 155, 0.808);
+    display: none;
+    height: auto;
+    border: 0px;
+    position: absolute;
+    width: 250px;
+
+}
+
+.navi li:hover ul {
+    display: block;
+}
+
+article {
+    margin-top: 50px;
+    text-align: center;
+    display: block;
+    position:relative;
+    z-index:1;
+    /* height: 600px; */
+}
+/* #info{
+    width: 500px;
+    padding: 0px 450px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 19px;
+    font-family: 'Cafe24Simplehae'; 
+}
+#info li {
+    margin: 15px;
+} */
+
+.login ul {
+    list-style: none;
+    border: 0;
+    padding: 0;
+}
+.login ul li {
+    float: right;
+    border: 0px 0px;
+    padding: 0;
+}
+.login ul li a {
+    float: right;
+    margin: 0px 0px 0px 38px;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(154, 197, 212);
+}
+
+footer {
+    color: rgb(73, 114, 131);
+    margin-top: 150px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    font-size: 14px;
+    background-color: rgb(195, 221, 231);
+}

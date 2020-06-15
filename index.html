@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HaEunji</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+          $('.bxslider').bxSlider({
+              auto: true,
+              speed: 1000,
+              pause: 5000,
+              mode: 'horizontal',
+              autoControls: true,
+              pager:true,
+              captions: true
+
+          });
+        });
+    </script>
+ 
+ <link rel="stylesheet" href="css/style.css">
+ 
+<style>
+
+    .slide{
+        width:1190px;
+        height: 600px;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+    }
+    .slide img {
+        position: relative;
+        width:1190px;
+        height: 600px;
+    }
+
+    #text{
+        color: rgba(255, 255, 255, 0.801);
+        text-shadow: rgba(160, 160, 160, 0.363) 3px 4px;
+        font-size: 45px;
+        position: absolute;
+        width: 1190px;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -35%);
+    }
+
+</style>
+    <!--[if lt IE 9]> 
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="wrap">
+        <header class="header">
+            
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo6.jpg" width="230px" height="100px" alt=""></a>
+                </div>
+                <div class="navi">
+                <ul>
+                    <li>
+                        <a href="자기소개.html" id="btn1"> <span> 자기소개 </span></a>
+                    </li>
+                    <li>
+                        <a href="관심사.html" id="btn2"><span> 관심사 </span></a>
+                        <ul>
+                            <li>
+                                <a href="관심사-공포영화.html"><span> 공포영화 </span></a>
+                            </li>
+                            <li>
+                                <a href="관심사-동물.html"><span> 동물 </span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="개발자로드맵.html" id="btn3"><span> 개발자로드맵 </span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="login">
+                <ul>
+                    <li>
+                        <a href="로그인.html"><span>로그인</span></a>
+                    </li>
+                    <li>
+                        <a href="회원가입.html">회원가입</a>
+                    </li>
+                </ul>
+            </div>
+            </nav>
+
+        </header>
+        <article>
+            <div class="slide">
+                <ul class="bxslider">
+                    <li><img src="images/3.jpg" width="600" alt=""></li>
+                    <li><img src="images/5.jpg" width="600" alt=""></li>
+                    <li><img src="images/6.jpg" width="600" alt=""></li>
+                    <li><img src="images/10.jpg" width="600" alt=""></li>
+                    <li><img src="images/11.jpg" width="600" alt=""></li>
+                    <li><img src="images/14.jpg" width="600" alt=""></li>
+                    <li><img src="images/18.jpg" width="600" alt=""></li>
+                    <li><img src="images/1.jpg" width="600" alt=""></li>
+                </ul>
+            </div>
+            <div id="text">The Wisdom Shining Like Silver</div>
+        </article>
+        <br>
+
+        <footer>
+            
+            <div id="copy">
+                <p style="font-size: 13px;">Copyright 하은지. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

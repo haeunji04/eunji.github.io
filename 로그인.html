@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #button{
+            height: 50px;
+            border-radius: 8px;
+            background-color: rgb(195,221,231);
+            outline: none;
+            border: 1px solid rgb(195,221,231);
+        }
+    
+        .inputLogin{
+            padding-top:100px;
+            margin: 0 auto;
+        }
+    </style>
+    <!--[if lt IE 9]> 
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="wrap">
+        <header class="header">
+            
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo6.jpg" width="230px" height="100px" alt=""></a>
+                </div>
+                <div class="navi">
+                <ul class="ul1">
+                    <li>
+                        <a href="자기소개.html" id="btn1"><span> 자기소개 </span></a>
+                    </li>
+                    <li>
+                        <a href="관심사.html" id="btn2"><span> 관심사 </span></a>
+                        <ul>
+                            <li>
+                                <a href="관심사-공포영화.html"><span> 공포영화 </span></a>
+                            </li>
+                            <li>
+                                <a href="관심사-동물.html"><span> 동물 </span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="개발자로드맵.html" id="btn3"><span> 개발자로드맵 </span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="login">
+                <ul>
+                    <li>
+                        <a href="로그인.html"><span>로그인</span></a>
+                    </li>
+                    <li>
+                        <a href="회원가입.html"><span>회원가입</span></a>
+                    </li>
+                </ul>
+            </div>
+            </nav>
+
+        </header>
+        <br><br>
+        <article style="line-height: 0;">
+            <div class="login">
+                <h1><span>로그인</span></h1>
+                <br>
+                <p></p>
+                <hr>
+                <br>
+                <form autocomplete="off" action="" onsubmit="return validate();">
+                    <table class="inputLogin">
+                        <tr>
+                            <th>아이디 : </th>
+                            <td><input type="text" name="userId" id="userId"></td>
+                            <td rowspan="2">
+                                <input type="submit" id="button" value="로그인">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>비밀번호 : </th>
+                            <td><input type="password" name="userPwd" id="userPwd"></td>
+                        </tr>
+                        
+                    </table>
+                    
+                </form>
+            </div>
+        </article>
+      
+        <footer>
+            <div id="copy">
+                <p style="font-size: 13px;">Copyright 하은지. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function validate(){
+            var userId = document.getElementById("userId").value;
+            var pwd = document.getElementById("userPwd").value;
+            console.log(userId, pwd);
+
+            if(userId=="admin" && pwd=="admin1234"){
+                alert('로그인 되었습니다.', location.href="index.html");
+                return true;
+            }else{
+                alert("로그인에 실패하였습니다.");
+                return false;
+            }
+                
+        }
+    </script>
+</body>
+</html>
